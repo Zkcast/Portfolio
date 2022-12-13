@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { Home } from './components/home/Home';
+import { NavBar } from './components/NavBar/NavBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Description } from './components/home/Description/Description';
+import { Contact } from './components/Contact/Contact';
+import { Skills } from './components/Skills/Skills';
+import { Proyects } from './components/proyects/Proyects';
+import { ModalContent } from './components/proyects/modal_content/ModalContent';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='principal_container'>
+        <NavBar></NavBar>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/proyects" element={<Proyects />} />
+          <Route path="/proyects/:id" element={<ModalContent />} />
+        </Routes>
+      </div>
+    </div >
   );
 }
 

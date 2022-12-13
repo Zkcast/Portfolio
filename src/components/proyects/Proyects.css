@@ -1,0 +1,92 @@
+.proyect_div {
+    max-width: 350px;
+}
+
+.container_div {
+    margin-top: 2rem;
+}
+.proyects-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    padding: 3rem;
+    align-items: center;
+    justify-content: center;
+    /* border-style: 1rem; */
+    
+}
+
+.proyect_container {
+    border-style: solid;
+    border-radius: 0.5rem;
+    border-color: rgba(212, 212, 212, 0.453);
+    border-width: 1px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 15px 20px 0 rgba(82, 82, 82, 0.21);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.proyect_div {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: 1.5rem;
+}
+
+.subtitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyect_div:hover .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    justify-items: center;
+}
+
+.tech_icon {
+    max-width: 25px;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    margin-top: 0.8rem;
+}
+
+.card {
+    /* border-radius: 0.5rem; */
+    box-shadow:
+    inset 0 -0em 0em rgba(0, 0, 0, 0),
+    0 0 0 0px rgb(69, 69, 69),
+    0.5em 0.5em 1em rgba(0, 0, 0, 0.5);
+
+}
+
+.proyect_div:hover .card {
+    filter: blur(2px);
+
+}
+
+.modal_proyects {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border-color: none;
+    border-radius: 0%;
+    box-shadow:
+    inset 0 -0em 0em rgba(0, 0, 0, 0.5),
+    0 0 0 1px rgb(69, 69, 69),
+    0.3em 0.3em 1em rgba(0, 0, 0, 2);
+}
