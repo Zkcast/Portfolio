@@ -86,8 +86,9 @@ export const Proyects = (props) => {
                 {filteredProyects.map((proyect, i) => {
                     return (
                         <div className='container_div'>
-                            <h5 className='card-title text-info'>{proyect.title}</h5>
+                            
                             <div className='proyect_container'>
+                            <h5 className='card-title text-info'>{proyect.title}</h5>
                                 <p style={{ color: 'grey' }}>{proyect.subtitle}</p>
                                 <div className='proyect_div'>
                                     <img className='card' src={proyect.img[0]} />
