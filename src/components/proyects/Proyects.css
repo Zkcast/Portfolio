@@ -65,7 +65,9 @@
     margin-right: 0.6rem;
     margin-top: 0.8rem;
 }
-
+.tech_icon:hover {
+    transform:scale(1.1)
+}
 .card {
     /* border-radius: 0.5rem; */
     box-shadow:
@@ -89,4 +91,17 @@
     inset 0 -0em 0em rgba(0, 0, 0, 0.5),
     0 0 0 1px rgb(69, 69, 69),
     0.3em 0.3em 1em rgba(0, 0, 0, 2);
+}
+
+.checkbox_div{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
 }

@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import * as emailjs from "emailjs-com";
 import { Container, Row, Col, Alert, Button } from "react-bootstrap";
-import { FaCaretLeft } from "react-icons/fa";
+import { FaRegEnvelope, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import './Contact.css'
 
 export const Contact = () => {
 
   const YOUR_EMAIL = "castioniezequiel@gmail.com"
-  const description = "Send me a message if you want to contact me, or let me know what you think. I'm open to listen any job offer, or just have a friendly talk!";
+  const YOUR_LINKEDIN = "https://linkedin.com/in/castioniezequiel"
+  const description = <>Send me a message if you want to contact me, or let me know what you think. I'm open to listen any job offer, or just have a friendly talk!</>
 
   const YOUR_SERVICE_ID = "service_v3r7cn8"
   const YOUR_TEMPLATE_ID = "template_g68nzi9"
@@ -81,44 +82,40 @@ export const Contact = () => {
     <div className='contact-container'>
 
       <Container>
+
         <meta charSet="utf-8" />
         <title> Contact</title>
         <meta name="description" content={description} />
         <Row className="sec_sp">
           <Col lg="12">
-            {/* <Alert
-              // show={formData.show}
-              variant={formData.variant}
-              className={`rounded-0 co_alert ${formData.show ? "d-block" : "d-none"
-                }`}
-              onClose={() => setFormdata({ show: false })}
-              dismissible
-            >
-              <p className="my-0">{formData.alertmessage}</p>
-            </Alert> */}
 
             {!formData.loading &&
-            <Alert show={formData.show} variant={formData.variant}>
-              <Alert.Heading>{formData.title}</Alert.Heading>
-              <p>
-                {formData.alertmessage}
-              </p>
-              <div className="d-flex justify-content-end">
-                <Button onClick={() => setFormdata({show: false})} variant={formData.variant === 'success' ? "outline-success" : "outline-danger"}>
-                  Close
-                </Button>
-              </div>
-            </Alert>
-            } 
+              <Alert show={formData.show} variant={formData.variant}>
+                <Alert.Heading>{formData.title}</Alert.Heading>
+                <p>
+                  {formData.alertmessage}
+                </p>
+                <div className="d-flex justify-content-end">
+                  <Button onClick={() => setFormdata({ show: false })} variant={formData.variant === 'success' ? "outline-success" : "outline-danger"}>
+                    Close
+                  </Button>
+                </div>
+              </Alert>
+            }
 
-
-          </Col>
-          <Col lg="5" className="mb-5">
             <h3 className="color_sec py-4">Get in touch!</h3>
+          </Col>
+
+          <Col lg="5" className="mb-5">
             <address>
-              <strong>Email:</strong>{" "}
+              <strong><FaRegEnvelope></FaRegEnvelope> Email:</strong>{" "}
               <a href={`mailto:${YOUR_EMAIL}`}>
                 {YOUR_EMAIL}
+              </a>
+              <br />
+              <strong><FaLinkedin></FaLinkedin> Linkedin: </strong>
+              <a href={YOUR_LINKEDIN} target='_blank'>
+                Ezequiel Guido Castioni
               </a>
               <br />
               <br />
