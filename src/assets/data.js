@@ -25,6 +25,13 @@ const rentten_images = imagesContext.keys().map(imagesContext);
 const imagesContext2 = require.context('./proyects/worldcountries', true, /\.(PNG|jpe?g|svg)$/);
 const wc_images = imagesContext2.keys().map(imagesContext2);
 
+const imagesContext3 = require.context('./proyects/tarquininv', true, /\.(PNG|jpe?g|svg)$/);
+const tarquini_images = imagesContext3.keys().map(imagesContext3);
+
+const imagesContext4 = require.context('./proyects/jsongenerator', true, /\.(PNG|jpe?g|svg)$/);
+const jsongenerator_images = imagesContext4.keys().map(imagesContext4);
+
+
 export const technologies = [
     {
         title: 'CSS',
@@ -132,11 +139,62 @@ export const proyects = [
         description: <><b>Single-Page Application (SPA)</b> developed using <b>React</b> and <b>Redux</b> to manage global states. Only <b>CSS</b> has been used to style and design the user interface, without using additional frameworks or libraries. On the back-end, <b>Node.js</b> with <b>Express</b> has been used to develop routing and <b>PostgreSQL</b> as the database to store information. The application itself allows for the visualization of countries and the assignment of activities through a controlled form. Users can use filters and sorting on the page to search and organize information according to their needs, and these can be overlaid on each other to obtain more precise results. <br></br><br></br>Read <a href='https://github.com/Zkcast/SoyHenry-Bootcamp-PI#readme' target='_blank'>README</a> for more info.</>,
 
         description_spanish: "SPA (Single-Page Application) desarrollada utilizando React y Redux para administrar los estados globales, lo que permite una mayor organización y facilidad en el manejo de la información. Se ha utilizado únicamente CSS para darle formato y diseño a la interfaz de usuario, sin utilizar frameworks o librerías adicionales. En el back-end, se ha utilizado Node.js con Express para desarrollar el enrutamiento y PostgreSQL como base de datos para almacenar la información. La aplicación en sí permite visualizar países del mundo y asignarles actividades mediante un formulario controlado. Los usuarios pueden utilizar filtros y ordenamientos en la página para buscar y organizar la información de acuerdo a sus necesidades, y estos pueden superponerse entre sí para obtener resultados más precisos.",
+
         link: "https://worldcountries-app.vercel.app/",
 
         github: "https://github.com/Zkcast/SoyHenry-Bootcamp-PI",
         used: ['react', 'html', 'css', 'redux', 'nodejs', 'express', 'sequelize', 'postgresql']
     },
+    {
+        id: 3,
+        title: 'TARQUINI-INVENTARIO',
+        icons: <FaAngular />,
+        subtitle: 'Inventory management application',
+        img: tarquini_images,
+        description: <>Single-page application (SPA) built entirely in <b>Angular</b> (with <b>TypeScript</b>) and <b>Bootstrap</b> on the front-end, <b>NodeJS</b> on the back-end with <b>Express</b>, and <b>Sequelize</b> to connect to a <b>PostgreSQL</b> database.
+        It is a very simple tool but it is useful for the purpose it was requested for; organizing the company's inventory a bit. Each sector can have 3 types of items (PCs/notebooks, phones, or "other"), and each item can be filtered in the search bar by barcode to access it more quickly with the scanner directly.
+        I deployed it simply in order to be able to show it in my portfolio, since the original application will only be running locally. The data within the app is also faked for demonstration purposes and the features of each are those requested, as it was explicitly requested to be in Spanish and it was not necessary to make it responsive since in practice it will always be used on a PC.
+        You can add and/or delete elements and sectors as you wish to test the page.</>,
+        description_spanish: "",
+        link: "https://tarquini-inventario.vercel.app/",
+        github: "https://github.com/Zkcast/Tarquini-Inventario/",
+        used: ['angular', 'html', 'css', 'bootstrap', 'nodejs', 'express', 'sequelize', 'postgresql', 'typescript']
+    },
+
+    {
+        id: 4,
+        title: 'JSON-GENERATOR',
+        icons: <FaAngular />,
+        subtitle: 'App for creating mock data',
+        img: jsongenerator_images,
+        description: <><b>Phase one of the 'JSON Generator' project</b><br></br><br/>
+        In this first stage, the basic and main functionality of the application was sought: to introduce the desired number of key / value elements and return a random JSON with X number of objects.
+        Where "key" would be the name of it and where "value" a set of possible values, which can be an array of strings, a boolean value (true / false) or a range between two numbers.<br/><br/>
+        By filling in the desired and entering the number of elements we want, the application allows us to download a JSON which will be an array of randomized objects according to the given options.
+        It is very useful in the development stage, giving us thousands of dummy objects to test all the functionality of our application.</>,
+        description_spanish: "",
+        link: "https://jsongeneratorv1.vercel.app/",
+        github: "https://github.com/Zkcast/json-generator",
+        used: ['angular', 'html', 'css', 'bootstrap', 'typescript']
+    },
 
 
 ];
+
+
+
+
+// "Phase one of the 'JSON Generator' project
+// In this first stage, the basic and main functionality of the application was sought: to introduce the desired number of key / value elements and return a random JSON with X number of objects.
+// Where "key" would be the name of it and where "value" a set of possible values, which can be an array of strings, a boolean value (true / false) or a range between two numbers.
+// By filling in the desired and entering the number of elements we want, the application allows us to download a JSON which will be an array of randomized objects according to the given options.
+// It is very useful in the development stage, giving us thousands of dummy objects to test all the functionality of our application."
+
+
+
+
+// Primera fase del proyecto "JSON Generator"
+// En esta primera etapa se busco lograr la funcionalidad básica y principal de la aplicación: introducir la cantidad deseada de elementos clave/valor y retornar un JSON random con X cantidad de objetos. 
+// Donde "clave" sería el nombre de la misma y donde "valor" un conjunto de posibles valores, que pueden ser un array de strings, un valor booleano (true/false) o un rango entre dos números.
+// Al llenar lo deseado e introducir la cantidad de elementos que queremos, la aplicación nos permite descargar un JSON el cual será un array de objetos randomizados según las opciones dadas.
+// Es muy útil en etapa de desarrollo, dandonos miles de objetos dummys para probar todas las funcionalidades de nuestro aplicativo.
