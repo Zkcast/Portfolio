@@ -13,6 +13,7 @@ import ngrx from "./skills/ngrx.png"
 import puppeteer from "./skills/puppeteer.png"
 import express from "./skills/express.png"
 import github from "./skills/github.png"
+import sass from "./skills/sass.png"
 
 // import countriesapp from './proyects/countries-app.PNG'
 // import rentten from '/proyects/rentten.PNG'
@@ -31,6 +32,8 @@ const tarquini_images = imagesContext3.keys().map(imagesContext3);
 const imagesContext4 = require.context('./proyects/jsongenerator', true, /\.(PNG|jpe?g|svg)$/);
 const jsongenerator_images = imagesContext4.keys().map(imagesContext4);
 
+const imagesContext5 = require.context('./proyects/starwars', true, /\.(PNG|jpe?g|svg)$/);
+const starwars_images = imagesContext5.keys().map(imagesContext5);
 
 export const technologies = [
     {
@@ -111,6 +114,11 @@ export const technologies = [
         image: github,
         link: 'https://github.com/'
     },
+    {
+        title: 'SASS',
+        image: sass,
+        link: 'https://sass-lang.com/'
+    },
 ]
 
 
@@ -152,9 +160,9 @@ export const proyects = [
         subtitle: 'Inventory management application',
         img: tarquini_images,
         description: <>Single-page application (SPA) built entirely in <b>Angular</b> (with <b>TypeScript</b>) and <b>Bootstrap</b> on the front-end, <b>NodeJS</b> on the back-end with <b>Express</b>, and <b>Sequelize</b> to connect to a <b>PostgreSQL</b> database.
-        It is a very simple tool but it is useful for the purpose it was requested for; organizing the company's inventory a bit. Each sector can have 3 types of items (PCs/notebooks, phones, or "other"), and each item can be filtered in the search bar by barcode to access it more quickly with the scanner directly.
-        I deployed it simply in order to be able to show it in my portfolio, since the original application will only be running locally. The data within the app is also faked for demonstration purposes and the features of each are those requested, as it was explicitly requested to be in Spanish and it was not necessary to make it responsive since in practice it will always be used on a PC.
-        You can add and/or delete elements and sectors as you wish to test the page.</>,
+            It is a very simple tool but it is useful for the purpose it was requested for; organizing the company's inventory a bit. Each sector can have 3 types of items (PCs/notebooks, phones, or "other"), and each item can be filtered in the search bar by barcode to access it more quickly with the scanner directly.
+            I deployed it simply in order to be able to show it in my portfolio, since the original application will only be running locally. The data within the app is also faked for demonstration purposes and the features of each are those requested, as it was explicitly requested to be in Spanish and it was not necessary to make it responsive since in practice it will always be used on a PC.
+            You can add and/or delete elements and sectors as you wish to test the page.</>,
         description_spanish: "",
         link: "https://tarquini-inventario.vercel.app/",
         github: "https://github.com/Zkcast/Tarquini-Inventario/",
@@ -167,15 +175,31 @@ export const proyects = [
         icons: <FaAngular />,
         subtitle: 'App for creating mock data',
         img: jsongenerator_images,
-        description: <><b>Phase one of the 'JSON Generator' project</b><br></br><br/>
-        In this first stage, the basic and main functionality of the application was sought: to introduce the desired number of key / value elements and return a random JSON with X number of objects.
-        Where "key" would be the name of it and where "value" a set of possible values, which can be an array of strings, a boolean value (true / false) or a range between two numbers.<br/><br/>
-        By filling in the desired and entering the number of elements we want, the application allows us to download a JSON which will be an array of randomized objects according to the given options.
-        It is very useful in the development stage, giving us thousands of dummy objects to test all the functionality of our application.</>,
+        description: <><b>Phase one of the 'JSON Generator' project</b><br></br><br />
+            In this first stage, the basic and main functionality of the application was sought: to introduce the desired number of key / value elements and return a random JSON with X number of objects.
+            Where "key" would be the name of it and where "value" a set of possible values, which can be an array of strings, a boolean value (true / false) or a range between two numbers.<br /><br />
+            By filling in the desired and entering the number of elements we want, the application allows us to download a JSON which will be an array of randomized objects according to the given options.
+            It is very useful in the development stage, giving us thousands of dummy objects to test all the functionality of our application.</>,
         description_spanish: "",
         link: "https://jsongeneratorv1.vercel.app/",
         github: "https://github.com/Zkcast/json-generator",
         used: ['angular', 'html', 'css', 'bootstrap', 'typescript']
+    },
+
+    {
+        id: 5,
+        title: 'STARWARS APP',
+        icons: <FaAngular />,
+        subtitle: 'Angular/TypeScript Challenge',
+        img: starwars_images,
+        description: <><b>Angular/TypeScript Challenge</b><br></br><br />
+            It is a very simple application to show my skills using <b>Angular</b> framework and its different services, using a hexagonal architecture to give better visibility and functionality to the application. Information is shared through a service that makes requests to an API (<b>http://www.starwapi.vg/</b>) and is managed through another service that returns the information with its respective filters.
+            It was created for a challenge for a job application, which required making requests to the API and rendering Star Wars characters.
+            It was created with <b>Angular</b> using <b>TypeScript</b>, and <b>SASS</b> was used for styling.</>,
+        description_spanish: "",
+        link: "https://starwars-app-sigma.vercel.app/",
+        github: "https://github.com/Zkcast/starwars-app",
+        used: ['angular', 'html', 'typescript', 'sass']
     },
 
 
@@ -194,7 +218,7 @@ export const proyects = [
 
 
 // Primera fase del proyecto "JSON Generator"
-// En esta primera etapa se busco lograr la funcionalidad básica y principal de la aplicación: introducir la cantidad deseada de elementos clave/valor y retornar un JSON random con X cantidad de objetos. 
+// En esta primera etapa se busco lograr la funcionalidad básica y principal de la aplicación: introducir la cantidad deseada de elementos clave/valor y retornar un JSON random con X cantidad de objetos.
 // Donde "clave" sería el nombre de la misma y donde "valor" un conjunto de posibles valores, que pueden ser un array de strings, un valor booleano (true/false) o un rango entre dos números.
 // Al llenar lo deseado e introducir la cantidad de elementos que queremos, la aplicación nos permite descargar un JSON el cual será un array de objetos randomizados según las opciones dadas.
 // Es muy útil en etapa de desarrollo, dandonos miles de objetos dummys para probar todas las funcionalidades de nuestro aplicativo.

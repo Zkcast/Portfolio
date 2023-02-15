@@ -8,8 +8,8 @@
 .proyects-gallery {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 2rem;
-    padding: 3rem;
+    column-gap: 1rem;
+    padding: 2rem;
     align-items: center;
     justify-content: center;
     /* border-style: 1rem; */

@@ -16,7 +16,7 @@ export const Description = () => {
                     <h4 className="card-subtitle mb-2 text-muted">Fullstack developer</h4>
                     <hr></hr>
                     <p className="card-text">
-                        I am a <b>fullstack javascript</b> developer from Buenos Aires, Argentina with experience in technologies such as <b>react</b>, <b>angular</b>, <b>nodejs</b>, <b>express</b> and <b>sequelize</b>. I enjoy working on large-scale projects and am constantly looking for new challenges and opportunities to improve my skills. I also have experience working in teams using agile methodologies like <b>Scrum</b>, using relational databases like <b>PostgreSQL</b>, and handling <b>CSS</b> and <b>Bootstrap</b> styles to design attractive and functional user interfaces.
+                        I am a <b>fullstack javascript</b> developer from Buenos Aires, Argentina with experience in technologies such as <b>React</b>, <b>Angular</b>, <b>NodeJs</b>, <b>Express</b> and <b>Sequelize</b>. I enjoy working on large-scale projects and am constantly looking for new challenges and opportunities to improve my skills. I also have experience working in teams using agile methodologies like <b>Scrum</b>, using relational databases like <b>PostgreSQL/MySQL</b>, and handling <b>CSS</b>/<b>SASS</b> or <b>Bootstrap</b> to design attractive and functional user interfaces.
                     </p>
                     {/* <Link to='/about'><a className="card-link">learn more about me</a></Link> */}
                     <Link to='/contact'><button type="button" class="btn btn-info">Contact me</button></Link>
