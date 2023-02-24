@@ -1,0 +1,107 @@
+.resume_container {
+  background-color: #3D3D3D;
+  border-color: #3D3D3D;
+  border-radius: 0.5rem;
+  border-top: #976356;
+  border-bottom: #976356;
+  border-style: solid;
+  border-width: 5px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 2vh;
+}
+
+.fontType {
+  font-family: 'Inter', sans-serif;
+}
+
+.banner {
+  background-color: #976356;
+  max-height: 5px;
+}
+
+.icon {
+  width: 16px
+}
+
+hr {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.337);
+  margin-top: 0%;
+}
+
+.jsts {
+  background-color: #976356;
+}
+
+.description_text {
+  font-size: 10px;
+}
+
+.idiomas-cont {
+  border-right: rgba(128, 128, 128, 0.294);
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+  border-width: 1px;
+
+}
+
+.experience_text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, 0.84);
+  text-align: justify;
+  padding-right: 5vh;
+}
+
+.experience_container {
+  position: relative;
+
+}
+
+.info_container {
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.date {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 480px) {
+  .fontType {
+    font-size: 08px;
+  }
+}
+
+/* Para pantallas de hasta 768 píxeles de ancho */
+@media (max-width: 768px) {
+  .info_container {
+    font-size: 10px;
+  }
+
+  .info_container {
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}
+
+/* Para pantallas de hasta 1024 píxeles de ancho */
+@media (max-width: 1024px) {
+  .fontType {
+    font-size: 10px;
+  }
+}
+
+/* Para pantallas de más de 1024 píxeles de ancho */
+@media (min-width: 1025px) {
+  .fontType {
+    font-size: 12px;
+  }
+}

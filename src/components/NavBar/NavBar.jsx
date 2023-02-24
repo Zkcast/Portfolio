@@ -54,7 +54,7 @@ export const NavBar = (props) => {
 
                             <Link to='/projects'>
                                 <li onClick={colapse} className="nav-item">
-                                    <a name="projects" className={location.pathname == '/projects' ? "nav-link active link-bg-celeste" : "nav-link"}>Projects / Experience</a>
+                                    <a name="projects" className={location.pathname == '/projects' ? "nav-link active link-bg-celeste" : "nav-link"}>Projects</a>
                                 </li>
                             </Link>
 
@@ -63,7 +63,12 @@ export const NavBar = (props) => {
                                     <a name="contact" className={location.pathname == '/contact' ? "nav-link active link-bg-celeste" : "nav-link"}>Contact</a>
                                 </li>
                             </Link>
-                            <hr />
+
+                            <Link to='/resume'>
+                                <li onClick={colapse} className="nav-item">
+                                    <a name="resume" className={location.pathname == '/resume' ? "nav-link active link-bg-celeste" : "nav-link"}>Resume/CV</a>
+                                </li>
+                            </Link>
 
                         </ul>
                         <img onClick={() => handleShowModal()} className='profile_img' src={profileim}></img>

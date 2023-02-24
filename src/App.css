@@ -26,8 +26,6 @@
   }
 }
 
-
-
 .App-header {  
 
   min-height: 100vh;
@@ -62,6 +60,12 @@
    
  }
 
+ .text-brown{
+  color: #cb8675;
+ }
+ .text-brownest{
+  color: #a96d60;
+ }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
