@@ -215,7 +215,7 @@ export const Resume = () => {
                 </div>
             </div>
             <div className='my-2 text-end d-flex justify-content-end'>
-                <button onClick={descargarPDF} className='btn btn-secondary mx-5 mb-2 mt-1 btn-sm'>Descargar PDF</button>
+                <button onClick={descargarPDF} className='btn btn-secondary mx-5 px-2 mb-4 mt-1 btn-sm'>Descargar PDF</button>
             </div>
         </div>
     )
