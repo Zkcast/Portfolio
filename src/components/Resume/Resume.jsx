@@ -195,8 +195,8 @@ export const Resume = () => {
                                 <h5 className={section_text}>Stack</h5>
                             </Row>
                             <Row className='d-flex justify-content-around mx-4'>
-                                <button className='bg-warning text-white rounded border-0 m-2'>JavaScript</button>
-                                <button className='bg-warning text-white rounded border-0 m-2'>TypeScript</button>
+                                <button className='jsts text-white rounded border-0 m-2'>JavaScript</button>
+                                <button className='jsts text-white rounded border-0 m-2'>TypeScript</button>
                                 <button className='bg-info text-white rounded border-0 m-2'>CSS</button>
                                 <button className='bg-info text-white rounded border-0 m-2'>HTML</button>
                                 <button className='bg-info text-white rounded border-0 m-2'>Bootstrap</button>

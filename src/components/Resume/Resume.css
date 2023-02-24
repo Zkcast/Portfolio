@@ -34,6 +34,11 @@ hr {
   background-color: #976356;
 }
 
+.jsts:hover {
+  background-color: #724c42;
+
+}
+
 .description_text {
   font-size: 10px;
 }
