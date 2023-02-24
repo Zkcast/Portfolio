@@ -18,8 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/proyects" element={<Proyects />} />
-          <Route path="/proyects/:id" element={<ModalContent />} />
+          <Route path="/projects" element={<Proyects />} />
+          <Route path="/projects/:id" element={<ModalContent />} />
         </Routes>
       </div>
     </div >

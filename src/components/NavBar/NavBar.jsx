@@ -52,9 +52,9 @@ export const NavBar = (props) => {
                                 </li>
                             </Link>
 
-                            <Link to='/proyects'>
+                            <Link to='/projects'>
                                 <li onClick={colapse} className="nav-item">
-                                    <a name="proyects" className={location.pathname == '/proyects' ? "nav-link active link-bg-celeste" : "nav-link"}>Projects / Experience</a>
+                                    <a name="projects" className={location.pathname == '/projects' ? "nav-link active link-bg-celeste" : "nav-link"}>Projects / Experience</a>
                                 </li>
                             </Link>
 

@@ -13,7 +13,7 @@ export const Skills = () => {
         <div>
             
             <div className='skills_descr'>
-                <p style={{ color: 'grey' }} className="card-text">These are the technologies that I currently master and have used in real projects with a team and/or for individual projects. To see the projects where they have been implemented, go to the <Link to='/proyects'>Projects / Experience</Link> section.</p>
+                <p style={{ color: 'grey' }} className="card-text">These are the technologies that I currently master and have used in real projects with a team and/or for individual projects. To see the projects where they have been implemented, go to the <Link to='/projects'>Projects / Experience</Link> section.</p>
             </div>
             <div className="photo-gallery">
                 {technologies.map(data => (
