@@ -112,10 +112,7 @@ export const Resume = () => {
                                 • SPA presentacional y futuro e-commerce hecha en React, utilizando react-bootstrap para el estilado.
                             </Row>
                             <Row lg={12} md={12} xs={12} sm={12}>
-                                • Manejo de metodos HTTP para la comunicación entre cliente/servidor
-                            </Row>
-                            <Row lg={12} md={12} xs={12} sm={12}>
-                                • Experiencia utilizando React Router DOM.
+                                • Sección de contacto con notificaciones al mail, formularios reactivos, galería de imagenes, formulario de contacto, comunicación entre componentes.
                             </Row>
                             <Row className='text-brownest' lg={12} md={12} xs={12} sm={12}>
                                 • Stack usado :  HTML, CSS, JavaScript Bootstrap, React.

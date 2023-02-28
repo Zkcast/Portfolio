@@ -82,7 +82,6 @@ hr {
   }
 }
 
-/* Para pantallas de hasta 768 píxeles de ancho */
 @media (max-width: 768px) {
   .info_container {
     font-size: 10px;
@@ -94,17 +93,14 @@ hr {
     margin-right: 0;
     margin-left: 0;
   }
-
 }
 
-/* Para pantallas de hasta 1024 píxeles de ancho */
 @media (max-width: 1024px) {
   .fontType {
     font-size: 10px;
   }
 }
 
-/* Para pantallas de más de 1024 píxeles de ancho */
 @media (min-width: 1025px) {
   .fontType {
     font-size: 12px;

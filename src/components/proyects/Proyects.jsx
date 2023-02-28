@@ -93,7 +93,7 @@ export const Proyects = (props) => {
                                 <div className='proyect_div'>
                                     <img className='card' src={proyect.img[0]} />
                                     <p className='subtitle'>
-                                        <Link to={`/proyects/${proyect.id}`}> <button name={i} type="button" class="btn btn-info">Know more</button></Link>
+                                        <Link to={`/projects/${proyect.id}`}> <button name={i} type="button" class="btn btn-info">Know more</button></Link>
                                     </p>
 
                                 </div>

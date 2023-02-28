@@ -35,6 +35,9 @@ const jsongenerator_images = imagesContext4.keys().map(imagesContext4);
 const imagesContext5 = require.context('./proyects/starwars', true, /\.(PNG|jpe?g|svg)$/);
 const starwars_images = imagesContext5.keys().map(imagesContext5);
 
+const imagesContext6 = require.context('./proyects/northernlights', true, /\.(PNG|jpe?g|svg|png)$/);
+const northernlights_images = imagesContext6.keys().map(imagesContext6);
+
 export const technologies = [
     {
         title: 'CSS',
@@ -201,6 +204,21 @@ export const proyects = [
         github: "https://github.com/Zkcast/starwars-app",
         used: ['angular', 'html', 'typescript', 'sass']
     },
+
+    {
+        id: 6,
+        title: 'Northern Lights',
+        icons: <FaReact />,
+        subtitle: 'Presentational webpage',
+        img: northernlights_images,
+        description: <><b>Presentational webpage & future e-commerce</b><br></br><br />
+        Northern Lights is a React-based SPA with a future e-commerce functionality, utilizing react-bootstrap for styling. React Router DOM was employed for route management. The technology stack includes HTML, CSS, JavaScript, Bootstrap, and React. The platform provides a smooth user experience. It will eventually become a fully functional online store, allowing users to purchase products directly from the platform. The site ensure ease of navigation and an attractive interface for customers.</>,
+        description_spanish: "",
+        link: "https://northern-lights-seven.vercel.app/",
+        github: "https://github.com/Zkcast/northern-lights",
+        used: ['react', 'html', 'css', 'javascript', 'bootstrap']
+    },
+
 
 
 ];
