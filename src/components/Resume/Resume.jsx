@@ -4,6 +4,7 @@ import { Col, Row } from 'react-bootstrap'
 import spanishicon from '../../assets/icons/spanishicon.png'
 import englishicon from '../../assets/icons/englishicon.png'
 import pdfspanish from '../../assets/pdf/resumespanish.pdf'
+import pdfenglish from '../../assets/pdf/resumeenglish.pdf'
 
 export const Resume = () => {
 
@@ -14,14 +15,18 @@ export const Resume = () => {
         window.open(pdfspanish);
     }
 
+    const downloadPDF = () => {
+        window.open(pdfenglish);
+    }
+
     const [language, setLanguage] = useState('english')
 
     return (
         <div>
             <div className=''>
-                <span style={{fontSize: '12px'}}>Select your language:</span>
-               <img onClick={() => setLanguage('spanish')} style={{cursor: 'pointer'}} className='icon mx-2' width='8px' src={spanishicon}></img>
-               <img onClick={() => setLanguage('english')} style={{cursor: 'pointer'}} className='icon mx-2' width='8px' src={englishicon}></img>
+                <span style={{ fontSize: '12px' }}>Select your language:</span>
+                <img onClick={() => setLanguage('spanish')} style={{ cursor: 'pointer' }} className='icon mx-2' width='8px' src={spanishicon}></img>
+                <img onClick={() => setLanguage('english')} style={{ cursor: 'pointer' }} className='icon mx-2' width='8px' src={englishicon}></img>
             </div>
             <div className='resume_container mx-5 px-3 mt-4 fontType'>
 
@@ -216,7 +221,11 @@ export const Resume = () => {
                 </div>
             </div>
             <div className='my-2 text-end d-flex justify-content-end'>
-                <button onClick={descargarPDF} className='btn btn-secondary mx-5 px-2 mb-4 mt-1 btn-sm'>Download PDF</button>
+                {language === 'english' ?
+                    <button onClick={downloadPDF} className='btn btn-secondary mx-5 px-2 mb-4 mt-1 btn-sm'>Download PDF</button>
+                    :
+                    <button onClick={descargarPDF} className='btn btn-secondary mx-5 px-2 mb-4 mt-1 btn-sm'>Descargar PDF</button>
+                }
             </div>
         </div>
     )
