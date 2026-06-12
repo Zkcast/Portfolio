@@ -20,8 +20,8 @@ export function Contact() {
               Have a project in mind?
             </h2>
             <p className="mt-3 text-base leading-relaxed text-ink-muted">
-              I'm open to full stack and front-end opportunities. Reach out by email or download
-              my CV for more detail.
+              I'm open to full stack roles and projects where I can build products end to end.
+              Reach out by email or download my CV for more detail.
             </p>
 
             <motion.div
