@@ -33,6 +33,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "unai-platform",
+    title: "Web & CRM SaaS Platform",
+    company: "UNAI · Founder",
+    period: "2025–present",
+    website: "https://unai.com.ar",
+    description:
+      "Founder-built all-in-one platform for small businesses to launch their web, sell online, manage appointments, and run a simple CRM — without writing code.",
+    highlights: [
+      "Multi-template storefronts: e-commerce, portfolio, presentational sites, and shift booking",
+      "Multi-tenant architecture with Mercado Pago subscriptions and real-time booking holds via Socket.io",
+      "Full-stack build with React 19, Node.js, Express, and PostgreSQL",
+    ],
+    tags: ["React", "Node.js", "PostgreSQL", "TypeScript", "Mercado Pago", "Socket.io", "Tailwind"],
+    featured: true,
+    accent: "#4a9b8e",
+  },
+  {
     id: "velisse-platform",
     title: "Business Operations Platform",
     company: "Velisse",
