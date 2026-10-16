@@ -162,6 +162,21 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    company: "UNAI",
+    role: "Founder",
+    location: "Argentina",
+    website: "https://unai.com.ar",
+    period: "2025 – Present",
+    current: true,
+    bullets: [
+      "Founded and built an all-in-one SaaS for small businesses: websites, e-commerce, appointments, and CRM — without writing code",
+      "Designed a multi-tenant architecture with Mercado Pago subscriptions and real-time booking holds via Socket.io",
+      "Shipped an AI-assisted site builder with native templates and MCP servers for Cursor, ChatGPT, and Claude",
+      "Owned the full stack in production: React 19, Node.js, Express, PostgreSQL, and Linux VPS infrastructure",
+    ],
+    stack: ["React", "TypeScript", "Node.js", "Express", "PostgreSQL", "Tailwind", "Mercado Pago", "Socket.io", "MCP"],
+  },
+  {
     company: "Velisse",
     role: "Product Engineer",
     location: "Argentina",

@@ -11,7 +11,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Career path"
           title="Experience"
-          description="From IT technician to product engineer, building across fintech, legal tech, e-commerce, and business operations."
+          description="From IT technician to founder, building across SaaS, fintech, legal tech, e-commerce, and business operations."
         />
 
         <div className="relative">
